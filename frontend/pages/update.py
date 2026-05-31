@@ -36,7 +36,7 @@ if st.button("Update Skill"):
     }
 
     response = requests.put(
-        f"https://learning-tracker-ewhw.onrender.com/docs/update_skill/{update_id}",
+        f"https://learning-tracker-ewhw.onrender.com/docs/skills/update_skill/{update_id}",
         json=payload
     )
 

@@ -4,7 +4,7 @@ import pandas as pd
 st.title("Skills you mentioned")
 st.write("Here you can view the skills you have added. Click on the skill name to see more details and make any necessary updates to your learning plan. Keep track of your progress and stay motivated on your learning journey!")
 
-response = requests.get("https://learning-tracker-ewhw.onrender.com/docs/view_skills")
+response = requests.get("https://learning-tracker-ewhw.onrender.com/view_skills")
 
 data=response.json()
 

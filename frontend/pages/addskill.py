@@ -25,7 +25,10 @@ if submit_button:
         "goal": goal,
         "completion_date": str(completion_date)
     }
-    response = requests.post("https://learning-tracker-ewhw.onrender.com/docs/skills", json=payload)
+    response = requests.post("https://learning-tracker-ewhw.onrender.com/skills", json=payload)
+    
+
+    
     st.success(response.json()["message"])
 
 col1,col2=st.columns(2)
