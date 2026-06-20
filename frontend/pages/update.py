@@ -36,10 +36,11 @@ if st.button("Update Skill"):
     }
 
     response = requests.put(
-        f"https://learning-tracker-ewhw.onrender.com/docs/skills/update_skill/{update_id}",
+        f"https://learning-tracker-ewhw.onrender.com/update_skill{update_id}",
         json=payload
     )
 
+    
     st.success(response.json()["message"])
 
 if st.button("⬅️ Back"):
